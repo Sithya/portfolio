@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 
 ## 🌐 Live Site
 
-Visit my portfolio: [https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
+Visit my portfolio: [https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/](https://sithya.github.io/portfolio/)
 
 ## ✨ Features
 
@@ -94,4 +94,4 @@ Feel free to fork this project and customize it for your own portfolio!
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Ry Kunsithya
