@@ -1,17 +1,29 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ChevronDown, Download, Github, Linkedin, Mail, Code, MessageCircle, Facebook } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { personalInfo } from "../config/portfolio-data"
+import { motion } from "framer-motion";
+import {
+  ChevronDown,
+  Download,
+  Github,
+  Linkedin,
+  Mail,
+  Code,
+  MessageCircle,
+  Facebook,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { personalInfo } from "../config/portfolio-data";
 
 export default function Hero() {
   const scrollToProjects = () => {
-    document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
-  }
+    document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -99,10 +111,10 @@ export default function Hero() {
                 size="lg"
                 className="border-2 border-gray-300 dark:border-gray-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300"
                 onClick={() => {
-                  const link = document.createElement("a")
-                  link.href = personalInfo.cvUrl
-                  link.download = "Alex_Johnson_CV.pdf"
-                  link.click()
+                  const link = document.createElement("a");
+                  link.href = personalInfo.cvUrl;
+                  link.download = "Ry_Kunsithya_CV.pdf";
+                  link.click();
                 }}
               >
                 <Download className="mr-2 h-4 w-4" />
@@ -117,10 +129,26 @@ export default function Hero() {
               className="flex justify-center lg:justify-start space-x-6"
             >
               {[
-                { icon: Github, href: personalInfo.social.github, label: "GitHub" },
-                { icon: Linkedin, href: personalInfo.social.linkedin, label: "LinkedIn" },
-                { icon: MessageCircle, href: personalInfo.social.telegram, label: "Telegram" },
-                { icon: Facebook, href: personalInfo.social.facebook, label: "Facebook" },
+                {
+                  icon: Github,
+                  href: personalInfo.social.github,
+                  label: "GitHub",
+                },
+                {
+                  icon: Linkedin,
+                  href: personalInfo.social.linkedin,
+                  label: "LinkedIn",
+                },
+                {
+                  icon: MessageCircle,
+                  href: personalInfo.social.telegram,
+                  label: "Telegram",
+                },
+                {
+                  icon: Facebook,
+                  href: personalInfo.social.facebook,
+                  label: "Facebook",
+                },
                 { icon: Mail, href: personalInfo.social.email, label: "Email" },
               ].map(({ icon: Icon, href, label }) => (
                 <motion.a
@@ -149,7 +177,7 @@ export default function Hero() {
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700">
                 <img
                   src={personalInfo.images.hero || "/placeholder.svg"}
-                  alt="Alex Johnson - Profile"
+                  alt="Ry Kunsithya - Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -187,10 +215,13 @@ export default function Hero() {
             className="cursor-pointer"
             onClick={scrollToProjects}
           >
-            <ChevronDown size={32} className="text-gray-400 hover:text-blue-600 transition-colors duration-300" />
+            <ChevronDown
+              size={32}
+              className="text-gray-400 hover:text-blue-600 transition-colors duration-300"
+            />
           </motion.div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

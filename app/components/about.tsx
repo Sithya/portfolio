@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Download, Code } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { personalInfo, aboutMe } from "../config/portfolio-data"
+import { motion } from "framer-motion";
+import { Download, Code } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { personalInfo, aboutMe } from "../config/portfolio-data";
 
-const skills = aboutMe.keySkills
+const skills = aboutMe.keySkills;
 
-const stats = aboutMe.stats
+const stats = aboutMe.stats;
 
 export default function About() {
   return (
@@ -40,7 +40,7 @@ export default function About() {
               <div className="w-80 h-80 mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={personalInfo.images.about || "/placeholder.svg"}
-                  alt="Alex Johnson"
+                  alt="Ry Kunsithya"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -57,9 +57,14 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Computer Science Student</h3>
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+              Computer Science Student
+            </h3>
             {aboutMe.description.map((paragraph, index) => (
-              <p key={index} className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p
+                key={index}
+                className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
+              >
                 {paragraph}
               </p>
             ))}
@@ -69,15 +74,21 @@ export default function About() {
                 <Card key={label} className="text-center p-4">
                   <CardContent className="p-0">
                     <Icon className="mx-auto mb-2 text-blue-600" size={24} />
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white">{value}</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">{label}</div>
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                      {value}
+                    </div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      {label}
+                    </div>
                   </CardContent>
                 </Card>
               ))}
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white">Key Skills</h4>
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
+                Key Skills
+              </h4>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
                   <motion.span
@@ -94,10 +105,10 @@ export default function About() {
             <Button
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
               onClick={() => {
-                const link = document.createElement("a")
-                link.href = personalInfo.cvUrl
-                link.download = "Alex_Johnson_CV.pdf"
-                link.click()
+                const link = document.createElement("a");
+                link.href = personalInfo.cvUrl;
+                link.download = "Ry_Kunsithya_CV.pdf";
+                link.click();
               }}
             >
               <Download className="mr-2 h-4 w-4" />
@@ -107,5 +118,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

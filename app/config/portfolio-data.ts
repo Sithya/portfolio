@@ -1,35 +1,47 @@
 // 🎯 EASY CUSTOMIZATION FILE
 // Edit this file to update all your portfolio content easily!
 
-import { GraduationCap, Code, Coffee, Briefcase, Award, Globe, Server, Database, GitBranch, Cloud } from "lucide-react"
+import {
+  GraduationCap,
+  Code,
+  Coffee,
+  Briefcase,
+  Award,
+  Globe,
+  Server,
+  Database,
+  GitBranch,
+  Cloud,
+} from "lucide-react";
 
 export const personalInfo = {
-  name: "Alex Johnson",
+  name: "Ry Kunsithya",
   title: "Aspiring Software Engineer",
   bio: "Computer Science student passionate about creating innovative solutions and building the future through code. Specializing in full-stack development and modern web technologies.",
   location: "San Francisco, CA",
-  email: "alex.johnson@email.com",
+  email: "mrsithya@gmail.com",
   phone: "+1 (555) 123-4567",
 
   // Social Links - Update these with your actual profiles
   social: {
-    github: "https://github.com/yourusername",
+    github: "https://github.com/sithya",
     linkedin: "https://linkedin.com/in/yourusername",
     twitter: "https://twitter.com/yourusername",
-    telegram: "https://t.me/yourusername",
+    telegram: "https://t.me/sithya",
     facebook: "https://facebook.com/yourusername",
-    email: "mailto:alex.johnson@email.com",
+    email: "mailto:mrsithya@gmail.com",
   },
 
   // Images - Replace these with your actual images
   images: {
-    hero: "/placeholder.svg?height=400&width=400&query=professional headshot of a computer science student smiling",
-    about: "/placeholder.svg?height=400&width=400&query=professional headshot of a computer science student",
+    hero: "/myPic.jpg?height=400&width=400&query=professional headshot of a computer science student smiling",
+    about:
+      "/myPic.jpg?height=400&width=400&query=professional headshot of a computer science student",
   },
 
   // CV Download - Replace with your actual CV file
-  cvUrl: "/cv/Alex_Johnson_CV.pdf", // Place your CV in the public/cv/ folder
-}
+  cvUrl: "/cv/Ry_Kunsithya_CV.pdf", // Place your CV in the public/cv/ folder
+};
 
 export const aboutMe = {
   description: [
@@ -58,14 +70,15 @@ export const aboutMe = {
     "AWS",
     "Next.js",
   ],
-}
+};
 
 export const projects = [
   {
     title: "E-Commerce Platform",
     description:
       "Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-    image: "/placeholder.svg?height=300&width=400&query=modern e-commerce website interface",
+    image:
+      "/placeholder.svg?height=300&width=400&query=modern e-commerce website interface",
     tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
     github: "https://github.com/yourusername/ecommerce-platform",
     demo: "https://your-ecommerce-demo.com",
@@ -75,7 +88,8 @@ export const projects = [
     title: "AI Chat Application",
     description:
       "Real-time chat application with AI integration using OpenAI API. Built with Next.js and Socket.io for seamless communication.",
-    image: "/placeholder.svg?height=300&width=400&query=AI chat application interface",
+    image:
+      "/placeholder.svg?height=300&width=400&query=AI chat application interface",
     tech: ["Next.js", "OpenAI API", "Socket.io", "MongoDB", "TypeScript"],
     github: "https://github.com/yourusername/ai-chat-app",
     demo: "https://your-chat-demo.com",
@@ -85,7 +99,8 @@ export const projects = [
     title: "Task Management System",
     description:
       "Collaborative project management tool with drag-and-drop functionality, real-time updates, and team collaboration features.",
-    image: "/placeholder.svg?height=300&width=400&query=task management dashboard",
+    image:
+      "/placeholder.svg?height=300&width=400&query=task management dashboard",
     tech: ["Vue.js", "Express.js", "MySQL", "WebSocket", "Docker"],
     github: "https://github.com/yourusername/task-manager",
     demo: "https://your-task-demo.com",
@@ -95,7 +110,8 @@ export const projects = [
     title: "Weather Analytics Dashboard",
     description:
       "Data visualization dashboard showing weather patterns and analytics using Chart.js and external weather APIs.",
-    image: "/placeholder.svg?height=300&width=400&query=weather analytics dashboard",
+    image:
+      "/placeholder.svg?height=300&width=400&query=weather analytics dashboard",
     tech: ["React", "Chart.js", "Weather API", "Material-UI", "Python"],
     github: "https://github.com/yourusername/weather-dashboard",
     demo: "https://your-weather-demo.com",
@@ -105,7 +121,8 @@ export const projects = [
     title: "Blockchain Voting System",
     description:
       "Secure voting application built on Ethereum blockchain ensuring transparency and immutability of votes.",
-    image: "/placeholder.svg?height=300&width=400&query=blockchain voting interface",
+    image:
+      "/placeholder.svg?height=300&width=400&query=blockchain voting interface",
     tech: ["Solidity", "Web3.js", "React", "Ethereum", "MetaMask"],
     github: "https://github.com/yourusername/blockchain-voting",
     demo: "https://your-voting-demo.com",
@@ -115,13 +132,14 @@ export const projects = [
     title: "Mobile Fitness Tracker",
     description:
       "React Native mobile app for tracking workouts, nutrition, and fitness goals with social sharing features.",
-    image: "/placeholder.svg?height=300&width=400&query=mobile fitness app interface",
+    image:
+      "/placeholder.svg?height=300&width=400&query=mobile fitness app interface",
     tech: ["React Native", "Firebase", "Redux", "Expo", "Chart.js"],
     github: "https://github.com/yourusername/fitness-tracker",
     demo: "https://your-fitness-demo.com",
     featured: false,
   },
-]
+];
 
 export const skills = {
   categories: [
@@ -177,19 +195,38 @@ export const skills = {
     { name: "AWS", icon: Cloud, color: "text-orange-500" },
     { name: "Git", icon: GitBranch, color: "text-red-500" },
   ],
-}
+};
 
 export const timeline = [
   {
     type: "education",
     icon: GraduationCap,
-    title: "Bachelor of Computer Science",
-    organization: "Tech University",
-    location: "San Francisco, CA",
+    title: "Bachelor of Information Technology",
+    organization: "Institute of Technology of Cambodia",
+    location: "Phnom Penh",
     date: "2022 - Present",
     description:
       "Pursuing a Bachelor's degree in Computer Science with a focus on software engineering and artificial intelligence. Current GPA: 3.8/4.0",
-    achievements: ["Dean's List (3 semesters)", "CS Department Scholarship", "Teaching Assistant for Data Structures"],
+    achievements: [
+      "Dean's List (3 semesters)",
+      "CS Department Scholarship",
+      "Teaching Assistant for Data Structures",
+    ],
+  },
+  {
+    type: "education",
+    icon: GraduationCap,
+    title: "Bachelor of Professional Communications",
+    organization: "Institute of foreign Languages",
+    location: "Phnom Penh",
+    date: "2022 - Present",
+    description:
+      "Pursuing a Bachelor's degree in Computer Science with a focus on software engineering and artificial intelligence. Current GPA: 3.8/4.0",
+    achievements: [
+      "Dean's List (3 semesters)",
+      "CS Department Scholarship",
+      "Teaching Assistant for Data Structures",
+    ],
   },
   {
     type: "internship",
@@ -215,7 +252,11 @@ export const timeline = [
     date: "March 2024",
     description:
       "Led a team of 4 developers to create an AI-powered study assistant. Won first place out of 150+ teams.",
-    achievements: ["$5,000 prize money", "Mentorship opportunity", "Featured in tech blog"],
+    achievements: [
+      "$5,000 prize money",
+      "Mentorship opportunity",
+      "Featured in tech blog",
+    ],
   },
   {
     type: "internship",
@@ -239,8 +280,13 @@ export const timeline = [
     organization: "Various Projects",
     location: "Remote",
     date: "2023 - Present",
-    description: "Active contributor to open-source projects including React libraries and developer tools.",
-    achievements: ["50+ contributions", "3 featured PRs", "Maintainer of 2 projects"],
+    description:
+      "Active contributor to open-source projects including React libraries and developer tools.",
+    achievements: [
+      "50+ contributions",
+      "3 featured PRs",
+      "Maintainer of 2 projects",
+    ],
   },
   {
     type: "education",
@@ -249,7 +295,12 @@ export const timeline = [
     organization: "Central High School",
     location: "Oakland, CA",
     date: "2018 - 2022",
-    description: "Graduated with honors. President of Computer Science Club and captain of the programming team.",
-    achievements: ["Valedictorian", "National Merit Scholar", "State Programming Competition - 2nd Place"],
+    description:
+      "Graduated with honors. President of Computer Science Club and captain of the programming team.",
+    achievements: [
+      "Valedictorian",
+      "National Merit Scholar",
+      "State Programming Competition - 2nd Place",
+    ],
   },
-]
+];
